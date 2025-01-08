@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+
+    <t t-name="todolist.TodoList">
+        <h1>Hello This is Todo List</h1>
+
+    </t>
+
+</templates>
