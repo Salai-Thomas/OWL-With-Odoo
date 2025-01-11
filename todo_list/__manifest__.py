@@ -27,7 +27,7 @@
         'views/templates.xml',
     ],
     'assets': {
-        'awesome_owl.assets_playground': [
+        'todo_list.assets_playground': [
             # bootstrap
             ('include', 'web._assets_helpers'),
             'web/static/src/scss/pre_variables.scss',
@@ -44,7 +44,7 @@
             'web/static/src/core/browser/browser.js',
             'web/static/src/core/registry.js',
             'web/static/src/core/assets.js',
-            'awesome_owl/static/src/**/*',
+            'todo_list/static/src/**/*',
         ],
     },
     'license': 'AGPL-3'
