@@ -5,8 +5,7 @@
         <div class="card d-inline-block m-2" style="width: 18rem;">
             <t t-foreach="props.todos" t-as="todo" t-key="todo.id">
                 <div class="card-body d-flex justify-content-between">
-                    <p><t t-esc="todo.description"/></p>
-                    <p><t t-esc="todo.isCompleted"/></p>
+                    <p t-att-class="{'text-muted text-decoration-line-through':todo.isCompleted}"><t t-esc="todo.description"/></p>
                 </div>
 
             </t>
