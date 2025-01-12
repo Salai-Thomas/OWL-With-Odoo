@@ -2,8 +2,7 @@
 <templates xml:space="preserve">
 
     <t t-name="todolist.TodoList">
-        <h1>Hello This is Todo List</h1>
-
+        <TodoItem todos="todos"/>
     </t>
 
 </templates>

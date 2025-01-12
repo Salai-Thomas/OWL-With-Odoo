@@ -2,8 +2,7 @@
 <templates xml:space="preserve">
 
     <t t-name="todo_list.playground">
-    <h1>hello</h1>
-
+        <TodoList/>
     </t>
 
 </templates>
