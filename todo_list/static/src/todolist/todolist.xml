@@ -2,6 +2,7 @@
 <templates xml:space="preserve">
 
     <t t-name="todolist.TodoList">
+        <input type="text" placeholder="Enter a Task" t-on-keyup="addTodo"/>
         <TodoItem todos="todos"/>
     </t>
 

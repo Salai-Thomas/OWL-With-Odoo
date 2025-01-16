@@ -20,5 +20,20 @@ export class TodoList extends Component{
 
     }
 
+    addTodo(ev){
+        if(ev.keyCode===13){
+            const text = ev.target.value.trim();
+            console.log(text);
+            ev.target.value = ""
+
+                    if(text){
+            this.todos.push({id:this.todos.length+1,description:`${text}`,isCompleted:false})
+        }
+        }
+
+    }
+
+
+
 
 }
