@@ -1,6 +1,6 @@
 /** @odoo-module **/
 
-import {Component,useState} from "@odoo/owl"
+import {Component,useState,useRef,onMounted} from "@odoo/owl"
 import {TodoItem} from "@todo_list/todoitem/todoitem"
 
 
@@ -18,7 +18,15 @@ export class TodoList extends Component{
     ]
     );
 
-    }
+    this.inputRef = useRef('input')
+
+    onMounted(()=>{
+         this.inputRef.el.focus();
+    });
+
+}
+
+
 
     addTodo(ev){
         if(ev.keyCode===13){
