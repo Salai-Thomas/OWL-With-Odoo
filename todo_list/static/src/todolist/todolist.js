@@ -18,6 +18,7 @@ export class TodoList extends Component{
     ]
     );
 
+    this.handleToggle = this.handleToggle.bind(this);
 
     }
 
@@ -32,6 +33,10 @@ export class TodoList extends Component{
         }
         }
 
+    }
+
+    handleToggle(todo){
+        todo.isCompleted = !todo.isCompleted
     }
 
 
