@@ -3,7 +3,11 @@
 
     <t t-name="todolist.TodoList">
         <input type="text" placeholder="Enter a Task" t-on-keyup="addTodo"/>
-        <TodoItem todos="todos"/>
+        <div class="card">
+            <t t-foreach="todos" t-as="todo" t-key="todo.id">
+        <TodoItem todo="todo"/>
+        </t>
+        </div>
     </t>
 
 </templates>

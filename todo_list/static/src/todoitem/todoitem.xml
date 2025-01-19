@@ -2,15 +2,8 @@
 <templates xml:space="preserve">
 
     <t t-name="todolist.TodoItem">
-        <div class="card d-inline-block m-2" style="width: 18rem;">
-            <t t-foreach="props.todos" t-as="todo" t-key="todo.id">
-                <div class="card-body">
-                    <input type="checkbox" t-att-checked="todo.isCompleted"/>
-                    <p t-att-class="{'text-muted text-decoration-line-through':todo.isCompleted}"><t t-esc="todo.description"/></p>
-                </div>
-            </t>
-        </div>
-
+        <input type="checkbox" t-att-checked="props.todo.isCompleted"/>
+        <p t-att-class="{'text-muted text-decoration-line-through':props.todo.isCompleted}"><t t-esc="props.todo.description"/></p>
     </t>
 
 </templates>
