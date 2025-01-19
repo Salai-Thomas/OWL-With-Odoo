@@ -45,7 +45,14 @@ export class TodoList extends Component{
         todo.isCompleted = !todo.isCompleted
     }
 
+    OnDelete(elId){
+        const index = this.todos.findIndex((el)=>el.id == elId);
 
+        if(index > 0){
+            this.todos.splice(index,1);
+        }
+
+    }
 
 
 }
