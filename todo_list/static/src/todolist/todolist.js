@@ -18,8 +18,6 @@ export class TodoList extends Component{
     ]
     );
 
-    this.handleToggle = this.handleToggle.bind(this);
-
     }
 
     addTodo(ev){
