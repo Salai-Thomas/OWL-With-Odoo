@@ -8,7 +8,23 @@
                 <button t-on-click="openCustomer" class="btn btn-primary">Customers</button>
                 <button t-on-click="openCRM" class="btn btn-primary">Leads</button>
             </t>
+
+            <div class="d-flex justify-content-between">
+                <DashboardItem>
+                    <p>Hello World</p>
+                 </DashboardItem>
+
+                <DashboardItem size="2">
+                    <p>God Is Love!</p>
+               </DashboardItem>
+
+                <DashboardItem>
+                    <p>Hello World</p>
+                </DashboardItem>
+                </div>
+
         </Layout>
+
     </t>
 
 </templates>

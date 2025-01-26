@@ -1,7 +1,9 @@
 /** @odoo-module **/
+/** @odoo-module **/
 
 import { Component } from "@odoo/owl";
 import { Layout } from "@web/search/layout";
+import {DashboardItem} from "@awesome_dashboard/dashboardItem";
 import { registry } from "@web/core/registry";
 import { useService } from "@web/core/utils/hooks";
 import { _t } from "@web/core/l10n/translation";
@@ -11,7 +13,7 @@ import { _t } from "@web/core/l10n/translation";
 class AwesomeDashboard extends Component {
     static template = "awesome_dashboard.AwesomeDashboard";
 
-    static components = {Layout}
+    static components = {Layout,DashboardItem}
 
     setup() {
       this.action = useService("action");
