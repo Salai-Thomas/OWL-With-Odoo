@@ -1,11 +1,11 @@
 /** @odoo-module **/
-/** @odoo-module **/
 
 import { Component } from "@odoo/owl";
 import { Layout } from "@web/search/layout";
 import {DashboardItem} from "@awesome_dashboard/dashboardItem";
 import { registry } from "@web/core/registry";
 import { useService } from "@web/core/utils/hooks";
+import { onWillStart,useState } from "@odoo/owl";
 import { _t } from "@web/core/l10n/translation";
 
 
@@ -15,8 +15,22 @@ class AwesomeDashboard extends Component {
 
     static components = {Layout,DashboardItem}
 
+
     setup() {
       this.action = useService("action");
+      this.rpc = useService("rpc");
+
+       this.statistics = useState({
+         nb_new_orders: 0,
+         total_amount: 0,
+         average_quantity: 0,
+         nb_cancelled_orders: 0,
+         average_time: 0,
+    });
+      onWillStart(async () => {
+         const result = await this.rpc("/awesome_dashboard/statistics");
+         Object.assign(this.statistics,result);
+      });
     }
 
     openCustomer() {
@@ -33,6 +47,7 @@ class AwesomeDashboard extends Component {
             views: [[false, 'form','list']],
         });
     }
+
 }
 
 

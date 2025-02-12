@@ -10,16 +10,16 @@
             </t>
 
             <div class="d-flex justify-content-between">
-                <DashboardItem>
-                    <p>Hello World</p>
+                <DashboardItem statistics="statistics.average_quantity">
+                    <h4>Average Amount of t-shirt by order this month.</h4>
                  </DashboardItem>
 
-                <DashboardItem size="2">
-                    <p>God Is Love!</p>
+                <DashboardItem size="2" statistics="statistics.average_time">
+                    <h4>Average Time for an order to go from 'new' to 'sent' or 'cancelled'</h4>
                </DashboardItem>
 
-                <DashboardItem>
-                    <p>Hello World</p>
+                <DashboardItem statistics="statistics.nb_new_orders">
+                    <h4>Numbers Of New Orders this month</h4>
                 </DashboardItem>
                 </div>
 

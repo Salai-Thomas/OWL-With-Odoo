@@ -4,6 +4,11 @@
     <t t-name="awesome_dashboard.DashboardItem">
         <div class="card" t-attf-style="width:{{18 * props.size}}rem;">
             <t t-slot="default"/>
+            <t t-if="props.statistics">
+                <h4 class="text-center text-success">
+                    <t t-esc="props.statistics"></t>
+                </h4>
+            </t>
         </div>
     </t>
 
