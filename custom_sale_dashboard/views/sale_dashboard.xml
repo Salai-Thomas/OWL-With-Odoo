@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record model="ir.actions.client" id="sale_dashboard">
+            <field name="name">Sale Dashboard</field>
+            <field name="tag">custom_sale_dashboard.sale_dashboard</field>
+        </record>
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="sale_dashboard_menu" name="Sale Dashboard" action="sale_dashboard"/>
+    </data>
+</odoo>

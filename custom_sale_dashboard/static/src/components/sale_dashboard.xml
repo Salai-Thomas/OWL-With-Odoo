@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+    <t t-name="custom_sale_dashboard.SaleDashboardAction">
+        <h1>Sale Dashboard</h1>
+    </t>
+</templates>
