@@ -7,5 +7,7 @@
         </record>
         <!-- This Menu Item must have a parent and an action -->
         <menuitem id="sale_dashboard_menu" name="Sale Dashboard" action="sale_dashboard"/>
+
     </data>
 </odoo>
+
