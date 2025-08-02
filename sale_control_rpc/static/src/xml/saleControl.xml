@@ -1,6 +1,0 @@
-<template id="saleControl">
-    <t t-name="saleControl">
-        <h1 class="mx-2">Hello World!</h1>
-    </t>
-</template>
-
