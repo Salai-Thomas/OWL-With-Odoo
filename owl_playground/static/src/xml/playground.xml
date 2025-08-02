@@ -1,0 +1,6 @@
+<template>
+    <t t-name="OWLPlayground">
+        <h2 class="mx-5 my-3 oe_kanban_color_green ">Welcome From OWL Playground!</h2>
+    </t>
+</template>
+
