@@ -6,7 +6,7 @@
 
     'description': """For Practice And Learning""",
     'author': "Salai Thomas",
-    'website': 'https://github.com/Salai-Thomas',
+    'website': 'https://github.com/Salai-Thomas/OWL-With-Odoo',
     'category': 'Uncategorized',
     'version': '18.0',
     'depends': ['base','web'],
